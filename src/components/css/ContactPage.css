@@ -1,0 +1,40 @@
+.contact-container {
+    text-align: center; /* Centers the text */
+    /* padding: 5.6vh 6.4vh; Adds padding around the content */
+    margin-right: 17.6vh;
+    padding-left: 10vh;
+  }
+  
+  .contact-container h2 {
+    margin-bottom: 0.8vh; /* Adds space below the heading */
+    font-size: 3.2vh; /* Size of the heading */
+  }
+  
+  .contact-container p {
+    margin-bottom: 3.2vh; /* Adds space below the paragraph */
+    color: #555; /* Color for the paragraph */
+    font-size: 1.92vh; /* Size of the paragraph text */
+  }
+  
+  .contact-icons {
+    display: flex;
+    justify-content: center; /* Centers the flex container */
+    gap: 6.84vh; /* Spacing between icons */
+  }
+  
+  .contact-icons a {
+    display: inline-block; /* Aligns the links inline */
+    color: inherit; /* Inherits the text color */
+    text-decoration: none; /* Removes underline from icons */
+  }
+  
+  .contact-icons svg {
+    width: 8.55vh; /* Example size, adjust as needed */
+    height: auto;
+    transition: transform 0.3s ease; /* Smooth scaling transition */
+  }
+  
+  .contact-icons a:hover svg {
+    transform: scale(1.2); /* Scales up icon on hover */
+  }
+  

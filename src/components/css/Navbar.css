@@ -1,0 +1,134 @@
+.navbar {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding: 1rem 5%;
+    background-color: white; 
+    color: black;
+  }
+  
+  .navbar nav ul {
+    list-style: none;
+    display: flex;
+    gap: 12vh; /* Spacing between nav items */
+    list-style-type: none;
+  }
+  
+  .navbar nav ul li a {
+    text-decoration: none;
+    color: black; 
+    font-weight: bold;
+    position: relative;
+    display: block;
+    /* transition: transform 0.3s ease;  */
+  }
+  
+  .navbar nav ul li a:hover {
+    color: #800080; 
+    font-weight:bolder; 
+  }
+
+  .nav-item:hover {
+    color: #800080; /* Color on hover */
+  }
+  
+  .active {
+    color: #800080; /* Active color */
+    border-bottom: 2px solid #800080; /* Highlight effect */
+  }
+
+  /* Default styles first: apply to all sizes and then override with media queries */
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.hamburger {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  display: none; /* Hidden by default */
+}
+
+.hamburger-icon {
+  width: 35px;
+  height: 24px;
+  display: inline-block;
+  position: relative;
+}
+
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+  background-color: #fff;
+  display: block;
+  height: 3px;
+  width: 100%;
+  position: absolute;
+  transition: all 0.3s;
+}
+
+.hamburger-inner::before,
+.hamburger-inner::after {
+  content: "";
+}
+
+.hamburger-inner::before {
+  top: -10px;
+}
+
+.hamburger-inner::after {
+  bottom: -10px;
+}
+
+.nav.open {
+  display: block;
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  .hamburger{
+    display: block;
+    padding-left: 5px;
+  }
+
+  .nav{
+    display: none;
+  }
+
+  .navbar nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    /* align-items: center; Optional: to center-align the menu items */
+  }
+
+  /* .navbar nav ul li {
+      margin-bottom: 10px; /* Add some space between items */
+  /* } */ 
+  /* .nav-menu { */
+      /* display: none; Hidden by default on smaller screens */
+     /* // flex-direction: column; If you want a vertical menu */
+  /* } */
+
+  /* .nav-menu ul { */
+      /* width: 100%; Full width */
+  /* } */
+
+  /* .nav-menu.open { */
+      /* display: flex; Show the menu when 'open' */
+  /* } */
+  
+  /* .navbar nav ul {
+    display: none;
+  }
+
+   */
+  .nav.open {
+    display: block;
+    
+  }
+}

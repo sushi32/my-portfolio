@@ -1,0 +1,58 @@
+
+.btn-primary {
+  background-color: #212121;
+  color: white;
+  padding: 1.25em 30px;
+  border: none;
+  border-radius: 2em;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  position: absolute;
+}
+
+.btn-primary:hover {
+  background-color: #000000;
+  transform: scale(1.05);
+}
+
+.hero-container {
+  text-align: left; /* Aligns the text to the left */
+  width: 80%; /* Take full width to center the content */
+  padding: 7em; /* Add padding to position content from the top */
+}
+
+/* The keyframes for the blinking cursor */
+@keyframes blink-caret {
+  50% { border-color: transparent; }
+}
+
+/* The container for the typing effect that includes the cursor */
+.typing-container {
+  font-family: 'Roboto', sans-serif;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block; /* Needed for inline appearance */
+  border-right: 3px solid orange; /* The cursor */
+  animation: blink-caret 1s step-end infinite;
+}
+
+/* The styles for each word that will appear one after the other */
+.typing-container span {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(40, end) infinite;
+  animation-fill-mode: forwards;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+.typed-text{
+  color: purple;
+  font-weight: bolder;
+}

@@ -1,0 +1,32 @@
+.download-btn {
+    transition: background-color 0.3s ease;
+    background-color: #212121;
+    color: white;
+    padding: 1.25em 30px;
+    border: none;
+    border-radius: 2em;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .download-btn:hover {
+    background-color: #800080; /* Darker shade for hover state */
+    cursor: pointer;
+    text-decoration: none; /* if your button is a link */
+  }
+  
+  .home-page-container {
+    text-align: center; /* Center align the content */
+    padding: 50px; /* Add some padding around the content */
+}
+
+.resume-paragraph {
+    margin-bottom: 20px; /* Add some space below the paragraph */
+    font-size: 18px; /* Set the font size for the paragraph */
+    color: #333; /* Set the text color */
+    max-width: 600px; /* Set a max-width for the paragraph text */
+    margin-left: auto; /* Centering the paragraph block */
+    margin-right: auto; /* Centering the paragraph block */
+}

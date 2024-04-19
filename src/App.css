@@ -36,3 +36,39 @@
     transform: rotate(360deg);
   }
 }
+
+/* Default styles first: apply to all sizes and then override with media queries */
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+/* Larger devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  .container {
+      max-width: 960px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+  .container {
+      max-width: 720px;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+  .container {
+      max-width: 540px;
+  }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+  .container {
+      max-width: 100%;
+      padding: 0 15px;
+  }
+}
